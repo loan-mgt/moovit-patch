@@ -2,12 +2,20 @@ group = "app.revanced"
 
 patches {
     about {
-        name = "ReVanced Patches template"
-        description = "Patches template for ReVanced"
-        source = "git@github.com:revanced/revanced-patches-template.git"
+        name = "Moovit Patches"
+        description = "ReVanced patches for Moovit: remove ads and unlock Moovit+"
         author = "ReVanced"
-        contact = "contact@revanced.app"
-        website = "https://revanced.app"
         license = "GNU General Public License v3.0"
+        source = "https://github.com/loan-mgt/revanced-patches-moovit"
+        contact = "qypol342@gmail.com"
+        website = "https://github.com/loan-mgt"
+    }
+}
+
+kotlin {
+    compilerOptions {
+        freeCompilerArgs.addAll(
+            "-Xcontext-parameters",
+        )
     }
 }

@@ -115,6 +115,10 @@ gradle-app.setting
 
 # Potentially copyrighted test APK
 *.apk
+*.apkm
+
+# ReVanced Manager debug logs
+revanced-manager_logcat_*.txt
 
 # Ignore vscode config
 .vscode/
