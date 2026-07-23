@@ -12,6 +12,10 @@ patches {
     }
 }
 
+// Prerequisite: build the revanced-patches submodule first.
+//   cd revanced-patches && ./gradlew :patches:jar -PgithubPackagesUsername=<user> -PgithubPackagesPassword=<token>
+// The shared GmsCore infrastructure classes live there and are not yet published to a public Maven repo.
+// Tracked: https://github.com/revanced/revanced-patches/issues
 dependencies {
     implementation(files("../revanced-patches/patches/build/libs/patches-6.1.1-dev.4.jar"))
 }

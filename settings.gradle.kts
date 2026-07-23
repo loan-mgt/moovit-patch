@@ -37,4 +37,3 @@ dependencyResolutionManagement {
 }
 
 include(":extensions:shared")
-include(":patches:stub")

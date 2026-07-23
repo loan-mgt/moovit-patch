@@ -127,10 +127,11 @@ revanced-manager_logcat_*.txt
 node_modules/
 
 # gradle properties, due to Github token
-./gradle.properties
+gradle.properties
 
 # Ignore IDEA files
 .idea/
 
 # Official ReVanced patches reference (not a submodule)
 revanced-patches/
+patches/bin/
