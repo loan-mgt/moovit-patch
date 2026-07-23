@@ -1,5 +1,9 @@
 [versions]
 revanced-patcher = "22.0.0"
-# Tracking https://github.com/google/smali/issues/64.
-#noinspection GradleDependency
 smali = "3.0.8"
+annotation = "1.9.1"
+
+[libraries]
+revanced-patcher = { module = "app.revanced:revanced-patcher", version.ref = "revanced-patcher" }
+smali = { module = "app.revanced:smali", version.ref = "smali" }
+annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }

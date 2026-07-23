@@ -131,3 +131,6 @@ node_modules/
 
 # Ignore IDEA files
 .idea/
+
+# Official ReVanced patches reference (not a submodule)
+revanced-patches/

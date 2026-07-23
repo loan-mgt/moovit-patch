@@ -18,3 +18,23 @@ pluginManagement {
 plugins {
     id("app.revanced.patches") version "1.0.0-dev.10"
 }
+
+settings {
+    extensions {
+        defaultNamespace = "app.revanced.extension"
+
+        proguardFiles(
+            rootProject.projectDir.resolve("extensions/proguard-rules.pro").toString()
+        )
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+include(":extensions:shared")
+include(":patches:stub")
